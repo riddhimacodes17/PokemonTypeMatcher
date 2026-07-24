@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    background-color:#FFD600;
+    height: 15vh;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid black;
+}
+.pokiball,#pikachu,#pikachu-small{
+    width: 50px;
+    height: auto;
+}
+#pokemon-logo{
+    height: auto;
+    width: 400px;
+}
+#pikachu-big{
+    height: 230px;
+    width: 190px;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+    gap: 20px;
+}
+button{
+    width: 320px;
+    height: 60px;
+    font-size: 17px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+button:hover {
+   transform: scale(1.05);
+   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 17vh;
+    width: 100%;
+    background-color: #1E2A4B;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+#start{
+    background-color: #EE5350;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+#score{
+    background-color: #3D7DCA;
+    color: white;
+}
