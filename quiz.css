@@ -74,9 +74,6 @@
 .question-container h2{
     margin-top: 12px;
 }
-#pokemonimg{
-    border: 1px solid #ddd;
-}
 .options-block1,.options-block2{
     display: flex;
     gap: 53px;
