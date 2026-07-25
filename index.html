@@ -26,6 +26,18 @@
         <img src="pokemonball.jpg" alt="pokemon-logo" class="pokiball">
         <p>@Pokemon Type Quiz</p>
         </div>
-        <script src="script.js"></script>
+
+  <script>
+    const startBtn=document.getElementById("start");
+    const scoreBtn=document.getElementById("score");
+
+    startBtn.addEventListener("click", function() {
+        window.location.href="quiz.html";
+    });
+
+    scoreBtn.addEventListener("click", function() {
+        window.location.href="scores.html";
+    });
+   </script>
 </body>
 </html>

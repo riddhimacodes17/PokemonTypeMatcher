@@ -60,12 +60,20 @@ function checkAnswer(event) {
         setTimeout(() => {
             getPokemon();
         }, 700);
+    } else {
+        alert(`Quiz Completed!
+            Your Score: ${score}/10`);
     }
 }
 
 const scoreText=document.getElementById("score");
 const questionText=document.getElementById("questionText");
 
+//back button
+const backBtn=document.getElementById("backBtn");
+backBtn.addEventListener("click", function() {
+    window.location.href="index.html";
+});
 
 
 
