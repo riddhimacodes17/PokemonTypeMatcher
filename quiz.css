@@ -57,7 +57,8 @@
     margin-top: 8px;
     height: auto;
     position: absolute;
-    transform: translate(-30%, -60%);
+    left:0%;
+    transform: translate(-50%, -50%);
     z-index: 10;
 }
 .question-container{
@@ -98,4 +99,11 @@
     border: none;
     border-radius: 7px;
     color: white;
+}
+#pokemonImage{
+    height: 45%;
+}
+.optionBtn:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
 }
