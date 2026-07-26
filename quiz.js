@@ -7,6 +7,7 @@ let score=0;
 let currentQuestion=1;
 const progresssBar= document.getElementById("progressBar");
 const pokeball=document.getElementById("pokiball");
+const toast=document.getElementById("toast");
 //fetch pokemon img using api
 let correctType= "";
 async function getPokemon() {
@@ -61,9 +62,16 @@ function checkAnswer(event) {
             getPokemon();
         }, 700);
     } else {
-        alert(`Quiz Completed!
-            Your Score: ${score}/10`);
-            let accuracy=Math.round((score/10)*100);
+            
+            toast.textContent=`🎉 Quiz Completed! Score: ${score}/10`;
+            toast.style.opacity="1";
+            toast.style.visibility="visible";
+
+            setTimeout(()=> {
+                window.location.href="scores.html";
+            }, 2000);
+
+        let accuracy=Math.round((score/10)*100);
         let previousScores=JSON.parse(localStorage.getItem("scores")) || [];
         previousScores.push({
            score: score,
@@ -72,7 +80,6 @@ function checkAnswer(event) {
            accuracy: accuracy+"%"
     });
         localStorage.setItem("scores",JSON.stringify(previousScores));
-        window.location.href="scores.html";
     }
 }
 
