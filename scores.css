@@ -49,12 +49,27 @@ h1{
     border-top-right-radius: 7px;
   display: flex;
   justify-content: space-around;
-  height: 7%;
+  padding: 18px 0;
   width: 100%;
   background-color: #1E2A4B;
   color: white;
 }
-p{
-    font-size: 17px;
+.headings p{
+    width: 20%;
+    text-align: center;
     margin: auto;
+    font-size: 17px;
+}
+.scoreRow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+.scoreRow p{
+    width: 20%;
+    text-align: center;
+    margin: 0;
 }

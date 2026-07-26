@@ -22,11 +22,30 @@
             <p>Total</p>
             <p>Accuracy</p>
         </div>
+        <div id="scoreList"></div>
     </div>
     <script>
     const backBtn=document.getElementById("backBtn");
     backBtn.addEventListener("click", function() {
     window.location.href="index.html";
+    });
+
+  //scorelist
+     
+    let previousScores=JSON.parse(localStorage.getItem("scores")) || [];
+    const scoreList=document.getElementById("scoreList");
+    previousScores.forEach((result, index)=> {
+        const row=document.createElement("div");
+        row.classList.add("scoreRow");
+
+        row.innerHTML=`
+        <p>${index+1}</p>
+        <p>${result.date}</p>
+        <p>${result.score}</p>
+        <p>${result.total}</p>
+        <p>${result.accuracy}</p>
+        `;
+        scoreList.appendChild(row);
     });
     </script>
 </body>

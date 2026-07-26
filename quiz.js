@@ -63,6 +63,16 @@ function checkAnswer(event) {
     } else {
         alert(`Quiz Completed!
             Your Score: ${score}/10`);
+            let accuracy=Math.round((score/10)*100);
+        let previousScores=JSON.parse(localStorage.getItem("scores")) || [];
+        previousScores.push({
+           score: score,
+           total: 10,
+           date: new Date().toLocaleDateString(),
+           accuracy: accuracy+"%"
+    });
+        localStorage.setItem("scores",JSON.stringify(previousScores));
+        window.location.href="scores.html";
     }
 }
 
