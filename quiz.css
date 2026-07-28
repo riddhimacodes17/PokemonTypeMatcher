@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #EE5350;
-    height: 10vh;
+    min-height: 70px;
     width: 100%;
     color: white;
     padding: 0 20px;
@@ -63,8 +63,10 @@
 }
 .question-container{
     margin: 30px auto 30px auto;
-    height: 90vh;
-    width: 90vh;
+    max-width: 700px;
+    width: 90%;
+    min-height: 500px;
+    padding: 20px;
     gap: 30px;
     display: flex;
     flex-direction: column;
@@ -101,7 +103,9 @@
     color: white;
 }
 #pokemonImage{
-    height: 45%;
+    width: 45%;
+    max-width: 220px;
+    height: auto;
 }
 .optionBtn:disabled{
     opacity: 0.7;
@@ -126,5 +130,42 @@
 button:hover {
    transform: scale(1.05);
    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+}
+@media (max-width:768px){
+
+    .question-container{
+        width:98%;
+        max-width: 500px;
+        padding:20px 15px;
+    }
+
+    .navbar h2{
+        font-size:18px;
+    }
+
+    .options-block1,
+    .options-block2{
+        gap:12px;
+    }
+
+    #optionA,
+    #optionB,
+    #optionC,
+    #optionD{
+        width:150px;
+        max-width:45%;
+        height:55px;
+        font-size:14px;
+    }
+
+    #pokemonImage{
+        width:60%;
+        height:auto;
+    }
+
+    .progress-text{
+        width:90%;
+    }
 
 }

@@ -6,7 +6,7 @@
 .header{
     display: flex;
     background-color:#FFD600;
-    height: 15vh;
+    min-height: 70px;
     width:100%;
     justify-content: space-between;
     align-items: center;
@@ -19,11 +19,13 @@
 }
 #pokemon-logo{
     height: auto;
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
 }
 #pikachu-big{
-    height: 230px;
-    width: 190px;
+    height: auto;
+    width: 45%;
+    max-width: 190px;
 }
 .middle{
     display: flex;
@@ -35,7 +37,8 @@
     gap: 20px;
 }
 button{
-    width: 320px;
+    width: 90%;
+    max-width: 320px;
     height: 60px;
     font-size: 17px;
     border: none;
@@ -75,4 +78,34 @@ button:hover {
 #score{
     background-color: #3D7DCA;
     color: white;
+}
+@media (max-width:768px){
+
+    .header{
+        padding:10px 15px;
+    }
+
+    .pokiball,
+    #pikachu-small{
+        width:35px;
+    }
+
+    #pokemon-logo{
+        width:90%;
+    }
+
+    #pikachu-big{
+        width:55%;
+    }
+
+    button{
+        width:90%;
+        max-width:320px;
+        font-size:16px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
 }

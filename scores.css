@@ -34,11 +34,16 @@ h1{
     margin: 45px auto;
     color:#1E2A4B;
 }
+.table-container{
+    width:100%;
+    overflow-x:auto;
+}
 .scoreboard{
     display: flex;
     flex-direction: column;
-    height: 95vh;
-    width: 92vh;
+    width: 95%;
+    max-width: 900px;
+    min-height:500px;
     border: 1px solid #bbbbbbbf;
     border-radius: 7px;
     margin: auto;
@@ -76,4 +81,30 @@ h1{
 #scoreList{
     max-height: 350px;
     overflow-y: auto;
+}
+@media (max-width:768px){
+
+    .navbar{
+        padding:0 10px;
+        min-height:70px;
+    }
+
+    .navbar h2{
+        font-size:18px;
+    }
+
+    h1{
+        font-size:22px;
+        margin:25px auto;
+    }
+
+    .scoreboard{
+        width:95%;
+    }
+
+    .headings p,
+    .scoreRow p{
+        font-size:12px;
+    }
+
 }
