@@ -97,7 +97,8 @@ https://pokeapi.co/
 
 ![previous Scores](image-2.png)
 
----
+### Live Deploy Link
+https://pokemon-type-matcher.netlify.app/
 
 
 ## 👩‍💻 Author
